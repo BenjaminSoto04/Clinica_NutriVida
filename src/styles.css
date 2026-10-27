@@ -1,0 +1,54 @@
+
+:root {
+  --nutrivida-verde: rgb(76, 114, 58);
+  --nutrivida-verde-oscuro: rgb(49, 78, 34);
+  --nutrivida-sombra: 2px 2px 8px rgba(36, 19, 0, 0.2);
+}
+
+body {
+  background-image: url("/images/fondo3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navCustom {
+  background-color: var(--nutrivida-verde);
+  min-height: 60px;
+  box-shadow: var(--nutrivida-sombra);
+  position: relative;
+  z-index: 1000;
+}
+
+.carta-corta {
+  border-radius: 15px;
+  box-shadow: var(--nutrivida-sombra);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.carta-corta:hover {
+  transform: translateY(-5px);
+}
+
+.carta-corta .card-title {
+  color: rgb(9, 82, 3);
+  text-align: center;
+}
+
+.carta-corta .card-text {
+  text-align: left;
+}
+
+.img-icono {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.footerCustom {
+  background-color: var(--nutrivida-verde-oscuro);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
